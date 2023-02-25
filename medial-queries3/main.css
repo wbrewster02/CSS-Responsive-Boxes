@@ -1,3 +1,100 @@
 body {
   background: peachpuff;
 }
+body {
+  background: peachpuff;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr  ;
+  grid-template-areas: 
+    " a a a a"
+    "b c d h"
+    "e f g h"
+     
+  ; 
+}
+.a {
+  grid-area: a;
+  background-color: blueviolet;
+}
+.b {
+  grid-area: b;
+ background-color: rgb(114, 24, 199);
+}
+.c { 
+  grid-area: c;
+  background-color: rgb(89, 31, 143);
+}
+.d {
+  grid-area: d;
+  background-color: rgb(146, 69, 218);
+}
+.e {
+  grid-area: e;
+  background-color: rgb(130, 64, 193);
+}
+.f { 
+  grid-area: f;
+  background-color: rgb(105, 49, 157);
+}
+.g {
+  grid-area: g;
+  background-color: rgb(96, 51, 138);
+}
+.h {
+  grid-area: h;
+  background-color: rgb(130, 79, 177);
+
+}
+
+
+@media(max-width: 1000px) {
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 2fr ;
+  grid-template-areas: 
+    " a a a "
+    "b c d "
+    "e f g "
+    "h h h "
+  ; 
+}
+.a {
+  grid-area: a;
+  background-color: blueviolet;
+}
+.b {
+  grid-area: b;
+ background-color: rgb(114, 24, 199);
+}
+.c { 
+  grid-area: c;
+  background-color: rgb(89, 31, 143);
+}
+.d {
+  grid-area: d;
+  background-color: rgb(146, 69, 218);
+}
+.e {
+  grid-area: e;
+  background-color: rgb(130, 64, 193);
+}
+.f { 
+  grid-area: f;
+  background-color: rgb(105, 49, 157);
+}
+.g {
+  grid-area: g;
+  background-color: rgb(96, 51, 138);
+}
+.h {
+  grid-area: h;
+  background-color: rgb(130, 79, 177);
+
+}}
